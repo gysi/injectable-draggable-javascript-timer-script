@@ -201,7 +201,7 @@ function extend_jquery_with_polarlib($) {
 }
 
 var sheet = window.document.styleSheets[0];
-sheet.insertRule('#javascript_timer { width: 150px; height: 150px; padding: 0.5em; border-style: solid;}', sheet.cssRules.length);
+sheet.insertRule('#javascript_timer { width: 150px; height: 150px; padding: 0.5em; border-style: solid;}');
 
 (async () => {
     await cirosantilli_load_scripts([
