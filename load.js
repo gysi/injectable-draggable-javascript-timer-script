@@ -262,7 +262,7 @@
 	style.innerHTML = `
 			#div-javascript-timer { 
 			position: fixed; 
-			top: 0; left: 0; 
+			top: 0; left: 50%; 
 			width: 150px; 
 			height: 150px; 
 			border-radius: 100%;
