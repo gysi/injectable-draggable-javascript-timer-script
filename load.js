@@ -260,7 +260,7 @@
 
 	var style = document.createElement('style');
 	style.innerHTML = `
-			#div-javascript-timer { 
+		#div-javascript-timer { 
 			position: fixed; 
 			top: 0; left: 50%; 
 			width: 150px; 
@@ -268,8 +268,8 @@
 			border-radius: 100%;
 			z-index: 90000;			
 			-webkit-box-shadow:inset 0px 0px 0px 2px black;
-	    	-moz-box-shadow:inset 0px 0px 0px 2px black;
-	    	box-shadow:inset 0px 0px 0px 2px black;
+			-moz-box-shadow:inset 0px 0px 0px 2px black;
+			box-shadow:inset 0px 0px 0px 2px black;
 			// padding: 0.5em; 
 			border-style: solid;
 			border-width: 1px;
@@ -278,13 +278,13 @@
 		}
 
 		#div-timer-text {
-		  position: fixed;
-		  width: 150px;
-		  text-align: center;
-		  left: 50%;
-		  top: 50%;
-		  transform: translateX(-50%);
-		  transform: transtateY(-50%);
+			position: fixed;
+			width: 150px;
+			text-align: center;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%);
+			transform: transtateY(-50%);
 		}
 	`;
 	document.head.appendChild(style);
@@ -301,7 +301,6 @@
 
 	    var div_timer = document.createElement("div");
 		div_timer.id = 'div-javascript-timer';
-		// myDiv.innerHTML = "<p>Drag me Around</p>";
 		div_timer.setAttribute("class", "ui-widget-content");
 		document.body.appendChild(div_timer);
 
@@ -343,12 +342,6 @@
 				timer.stop();
 				timer.start();
 			}
-		})
-
-		// $('#div-polartimer').polartimer('start');
-
-		$('#div-polartimer').bind('mouseup', function (){
-
 		})
 	})();
 })();
