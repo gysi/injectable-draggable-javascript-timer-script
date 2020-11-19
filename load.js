@@ -323,7 +323,7 @@
 		div_polar.id = 'div-polartimer';
 		div_timer.appendChild(div_polar);
 		$('#div-polartimer').polartimer({
-	  		timerSeconds: 120,
+	  		timerSeconds: javascript_draggable_timer_seconds,
 	  		color :'red'
 		});
 
