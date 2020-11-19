@@ -266,6 +266,7 @@
 			width: 150px; 
 			height: 150px; 
 			border-radius: 100%;
+			z-index: 90000;			
 			-webkit-box-shadow:inset 0px 0px 0px 2px black;
 	    	-moz-box-shadow:inset 0px 0px 0px 2px black;
 	    	box-shadow:inset 0px 0px 0px 2px black;
