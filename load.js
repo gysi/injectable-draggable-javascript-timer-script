@@ -332,7 +332,7 @@
 		div_timer_text.innerHTML = "Click to Start";
 		div_timer.appendChild(div_timer_text);
 
-		var timer = new CountDownTimer(120);
+		var timer = new CountDownTimer(javascript_draggable_timer_seconds);
 		timer.onTick(function (m, s){
 			div_timer_text.innerHTML = m + "' " + s + '"';
 		});
