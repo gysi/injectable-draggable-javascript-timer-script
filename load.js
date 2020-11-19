@@ -258,9 +258,9 @@
 	  };
 	};
 
-	var sheet = window.document.styleSheets[0];
-	sheet.insertRule(`
-		#div-javascript-timer { 
+	var style = document.createElement('style');
+	style.innerHTML = `
+			#div-javascript-timer { 
 			position: fixed; 
 			top: 0; left: 0; 
 			width: 150px; 
@@ -275,9 +275,8 @@
 			border-width: 1px;
 			transform: translateZ(0);
 			// box-sizing: border-box;
-		}`);
+		}
 
-	sheet.insertRule(`
 		#div-timer-text {
 		  position: fixed;
 		  width: 150px;
@@ -287,7 +286,8 @@
 		  transform: translateX(-50%);
 		  transform: transtateY(-50%);
 		}
-	`);
+	`;
+	document.head.appendChild(style);
 
 	(async () => {
 	    await cirosantilli_load_scripts([
