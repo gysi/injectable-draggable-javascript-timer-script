@@ -234,5 +234,5 @@ sheet.insertRule('#javascript_timer { width: 150px; height: 150px; padding: 0.5e
 
 	$('#javascript_timer').polartimer('start');
 
-
+	console.log("loaded");
 })();
