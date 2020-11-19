@@ -2,7 +2,7 @@
 ## How to use
 1. Create a Bookmark with the following code  
 ```javascript
-javascript:var javascript_draggable_timer_seconds = 120; var script = document.createElement('script');script.src = "https://cdn.statically.io/gh/gysi/injectable-draggable-javascript-timer-script/2.0.6/load.min.js"; script.type = 'text/javascript';document.head.appendChild(script);
+javascript:var javascript_draggable_timer_seconds = 120; var script = document.createElement('script');script.src = "https://cdn.statically.io/gh/gysi/injectable-draggable-javascript-timer-script/3.0.0/load.min.js"; script.type = 'text/javascript';document.head.appendChild(script);
 ```
 2. Go to any site (loading of external scripts needs to be allowed).  
 3. Click on the Bookmark  
