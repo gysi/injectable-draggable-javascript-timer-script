@@ -260,7 +260,7 @@
 
 	var style = document.createElement('style');
 	style.innerHTML = `
-			#div-javascript-timer { 
+		#div-javascript-timer { 
 			position: fixed; 
 			top: 0; left: 50%; 
 			width: 150px; 
@@ -278,13 +278,13 @@
 		}
 
 		#div-timer-text {
-		  position: fixed;
-		  width: 150px;
-		  text-align: center;
-		  left: 50%;
-		  top: 50%;
-		  transform: translateX(-50%);
-		  transform: transtateY(-50%);
+			position: fixed;
+			width: 150px;
+			text-align: center;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%);
+			transform: transtateY(-50%);
 		}
 	`;
 	document.head.appendChild(style);
