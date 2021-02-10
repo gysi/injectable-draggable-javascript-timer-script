@@ -8,3 +8,6 @@ javascript:var javascript_draggable_timer_seconds = 120; var script = document.c
 3. Click on the bookmark  
 
 You can adjust the timer by changing the variable ```javascript_draggable_timer_seconds``` within the bookmark code.
+
+## It doesn't work!
+Saddly some sites do not allow to load external script sources.
