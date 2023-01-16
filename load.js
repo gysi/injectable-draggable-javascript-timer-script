@@ -290,12 +290,18 @@
 	document.head.appendChild(style);
 
 	(async () => {
-		await cirosantilli_load_scripts([
-			'https://code.jquery.com/jquery-1.12.4.js',
-			'https://code.jquery.com/ui/1.12.1/jquery-ui.js',
-			'https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js',
-			'https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js'
-		]);
+		console.log('loading timer')
+		let scriptsToLoad = [];
+		if(typeof $ === 'undefined') {
+			scriptsToLoad.push('https://code.jquery.com/jquery-1.12.4.js')
+			scriptsToLoad.push('https://code.jquery.com/ui/1.12.1/jquery-ui.js');
+		} else if(typeof $.ui === 'undefined') {
+			scriptsToLoad.push('https://code.jquery.com/ui/1.12.1/jquery-ui.js');
+		}
+		scriptsToLoad.push('https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js');
+		scriptsToLoad.push('https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js');
+		await cirosantilli_load_scripts(scriptsToLoad);
+
 		extend_jquery_with_polarlib($);
 
 		var div_timer = document.createElement("div");
